@@ -164,7 +164,7 @@ func (s *State) inputWaiting() bool {
 	// during a "paste" input events are always an odd number, and
 	// the last one results in a blocking readNext, so return false
 	// when num is 1 or 0.
-	return num > 1
+	return num > 2
 }
 
 func (s *State) readNext() (interface{}, error) {
